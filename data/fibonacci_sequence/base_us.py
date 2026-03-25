@@ -35,26 +35,3 @@ def nth_fibonacci(n: int) -> int:
         prev, curr = curr, prev + curr
 
     return curr
-
-
-# =========================
-# Short test (correctness)
-# =========================
-if __name__ == "__main__":
-    # Known Fibonacci values for testing
-    test_cases = {
-        0: 0,
-        1: 1,
-        2: 1,
-        3: 2,
-        5: 5,
-        10: 55,
-        15: 610,
-    }
-
-    for n, expected in test_cases.items():
-        result = nth_fibonacci(n)
-        print(f"F({n}) = {result} | Expected: {expected}")
-        assert result == expected, f"Test failed for n={n}"
-
-    print("All tests passed successfully!")

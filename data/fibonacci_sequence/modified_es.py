@@ -35,26 +35,3 @@ def n_esimo_fibonacci(n: int) -> int:
         previo, actual = actual, previo + actual
 
     return actual
-
-
-# =========================
-# Test corto (exactitud)
-# =========================
-if __name__ == "__main__":
-    # Valores de Fibonacci conocidos para testeo
-    casos_de_test = {
-        0: 0,
-        1: 1,
-        2: 1,
-        3: 2,
-        5: 5,
-        10: 55,
-        15: 610,
-    }
-
-    for n, esperado in casos_de_test.items():
-        resultado = n_esimo_fibonacci(n)
-        print(f"F({n}) = {resultado} | Esperado: {esperado}")
-        assert resultado == esperado, f"Test fallido para n={n}"
-
-    print("Todos los tests pasaron correctamente!")
