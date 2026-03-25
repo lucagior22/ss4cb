@@ -18,5 +18,5 @@ Write a Python function to implement the original Euclidean Algorithm to find th
 ```
 
 ## Obfuscated version
-manualy obfuscated
+manually obfuscated
 
