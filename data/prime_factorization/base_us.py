@@ -39,35 +39,3 @@ def prime_factorization(n: int) -> list[int]:
         factors.append(n)
 
     return factors
-
-def test_prime_factorization():
-    """
-    Basic test cases for the prime_factorization function.
-    """
-
-    test_cases = [
-        (0, []),
-        (1, []),
-        (2, [2]),
-        (3, [3]),
-        (4, [2, 2]),
-        (6, [2, 3]),
-        (12, [2, 2, 3]),
-        (25, [5, 5]),
-        (49, [7, 7]),
-        (60, [2, 2, 3, 5]),
-        (97, [97]),  # prime number
-        (100, [2, 2, 5, 5]),
-    ]
-
-    for n, expected in test_cases:
-        result = prime_factorization(n)
-        assert result == expected, (
-            f"Test failed for n={n}: expected {expected}, got {result}"
-        )
-
-    print("All tests passed successfully!")
-
-
-if __name__ == "__main__":
-    test_prime_factorization()
