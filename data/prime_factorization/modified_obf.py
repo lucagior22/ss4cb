@@ -1,35 +1,24 @@
 def factorizacion_en_primos(n: int) -> list[int]:
     factores = []
-
-    
     if n < 2:
         return factores
-
-    
-    
     while n % 2 == 0:
         factores.append(2)
         n //= 2 
-
-    
     divisor = 3
     while divisor * divisor <= n:
-        
         while n % divisor == 0:
             factores.append(divisor)
             n //= divisor
         divisor += 2  
-
     if n > 1:
         factores.append(n)
-
     return factores
 
 def test_prime_factorization():
     """
     Basic test cases for the prime_factorization function.
     """
-
     test_cases = [
         (0, []),
         (1, []),
