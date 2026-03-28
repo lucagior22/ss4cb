@@ -1,5 +1,4 @@
-# Algorithm name
-Sieve of Sundaram
+# Sundaram Sieve
 
 ## Author
 Pablo Redruello (2026-03-26)
